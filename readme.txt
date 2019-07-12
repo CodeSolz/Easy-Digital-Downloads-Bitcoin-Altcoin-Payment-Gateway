@@ -1,7 +1,7 @@
 === Easy Digital Downloads Bitcoin / AltCoin Payment Gateway ===
 Donate link: https://www.paypal.me/wooAltCoinPayGatewy
 Contributors: codesolz, m.tuhin
-Tags: easy digital downloads bitcoin, easy digital downloads altcoin, easy digital downloads bitcoin payment, easy digital downloads cryptocurrency payment, easy digital downloads bitcoin payment gateway  
+Tags: woocommerce bitcoin, woocommerce altcoin, woocommerce bitcoin payment, woocommerce cryptocurrency payment, woocommerce bitcoin payment gateway  
 Plugin Slug: edd-bitcoin-altcoin-payment-gateway
 Text Domain: edd-bitcoin-altcoin-payment-gateway
 Domain Path: /languages

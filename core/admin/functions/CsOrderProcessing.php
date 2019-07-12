@@ -1,4 +1,7 @@
-<?php namespace EddBtcAltGateWayCoreLib\admin\functions;
+<?php
+
+namespace EddBtcAltGateWayCoreLib\admin\functions;
+
 /**
  * Settings
  * 
@@ -7,60 +10,58 @@
  * @author CodeSolz <customer-service@codesolz.com>
  */
 
-if ( ! defined( 'CS_EBAPG_VERSION' ) ) {
+if (!defined('CS_EBAPG_VERSION')) {
     exit;
 }
 
-use EddBtcAltGateWayCoreLib\lib\Util;
 use EddBtcAltGateWayCoreLib\lib\cartFunctions;
-use EddBtcAltGateWayCoreLib\admin\builders\CsEbapgForm;
-use EddBtcAltGateWayCoreLib\frontend\scripts\CsEbapgScript;
+use EddBtcAltGateWayCoreLib\lib\Util;
 
-class CsOrderProcessing{
-    
-    
-    function __construct() {
 
-    }
- 
+class CsOrderProcessing
+{
+
+
+    function __construct()
+    { }
+
     /**
      * Process payment
      * 
      * @return boolean
      */
-    public static function process_payment( $purchase_data ) {
-        
-        // $order = wc_get_order( $order_id );
-        $payment_confirm = isset($_POST['payment_confirm']) ? Util::check_evil_script( $_POST['payment_confirm'] ) : '';
-        $payment_info = isset( $_POST['payment_info'] ) ? Util::check_evil_script($_POST['payment_info']) : '';
+    public static function process_payment($purchase_data)
+    {
+        global $edd_options;
+
+        $payment_confirm = isset($_POST['payment_confirm']) ? Util::check_evil_script($_POST['payment_confirm']) : '';
+        $payment_info = isset($_POST['payment_info']) ? Util::check_evil_script($_POST['payment_info']) : '';
         $reference_trxid = isset($_POST['trxid']) ? Util::check_evil_script($_POST['trxid']) : '';
         // $reference_trxid = '';
-        
+
         //get checkout type
         $checkout_type = cartFunctions::get_temp_log_checkout_type();
-        
-        
-        if( empty($payment_info)){
-            edd_set_error( 'empty_payment_info', __( 'Sorry! Something went wrong. Please refresh this page and try again.', 'edd'));
+
+        if (empty($payment_info)) {
+            edd_set_error('empty_payment_info', __('Sorry! Something went wrong. Please refresh this page and try again.', 'edd-bitcoin-altcoin-payment-gateway'));
         }
 
-        $payment_info = explode( '__', $payment_info);
-        if( empty( $reference_trxid ) ){
-            edd_set_error( 'empty_trxid', sprintf(__( 'Please enter your %s transaction trxID.', 'edd-bitcoin-altcoin-payment-gateway'), $payment_info[ 2 ] ) );
+        $payment_info = explode('__', $payment_info);
+        if (empty($reference_trxid)) {
+            edd_set_error('empty_trxid', sprintf(__('Please enter your %s transaction trxID.', 'edd-bitcoin-altcoin-payment-gateway'), $payment_info[2]));
         }
 
-        if( empty($payment_confirm) && ( empty($checkout_type) || $checkout_type != 2) ){
-            edd_set_error( 'empty_payment_confirm', __('Please click the confirmation checkbox that you have already transfered the coin successfully!', 'edd'));
+        if (empty($payment_confirm) && (empty($checkout_type) || $checkout_type != 2)) {
+            edd_set_error('empty_payment_confirm', __('Please click the confirmation checkbox that you have already transfered the coin successfully!', 'edd-bitcoin-altcoin-payment-gateway'));
         }
-
 
         $errors = edd_get_errors();
-        if(!$errors) {
+        if (!$errors) {
 
             $purchase_summary = edd_get_purchase_summary($purchase_data);
-            $payment = array( 
-                'price' => $purchase_data['price'], 
-                'date' => $purchase_data['date'], 
+            $payment = array(
+                'price' => $purchase_data['price'],
+                'date' => $purchase_data['date'],
                 'user_email' => $purchase_data['user_email'],
                 'purchase_key' => $purchase_data['purchase_key'],
                 'currency' => $edd_options['currency'],
@@ -69,14 +70,14 @@ class CsOrderProcessing{
                 'user_info' => $purchase_data['user_info'],
                 'status' => 'pending'
             );
-    
+
             // record the pending payment
-            $payment = edd_insert_payment($payment);
+            $order_id = edd_insert_payment($payment);
 
             //save order info
-            cartFunctions::save_payment_info( $payment, array(
-                'coin_db_id' => sanitize_text_field($_POST['altcoin']),
-                'special_discount' => isset($_POST['special_discount_amount']) ? $_POST['special_discount_amount'] : '',
+            cartFunctions::save_payment_info($order_id, array(
+                'coin_db_id' => (int) Util::check_evil_script($_POST['altcoin']),
+                'special_discount' => isset($_POST['special_discount_amount']) ? (float) Util::check_evil_script($_POST['special_discount_amount']) : '',
                 'cart_total' => $purchase_data['price'],
                 'coin_name' => $payment_info[2],
                 'total_coin' => $payment_info[1],
@@ -87,35 +88,31 @@ class CsOrderProcessing{
             ));
 
 
-            if( !empty($checkout_type) && $checkout_type == 2 ){
+            if (!empty($checkout_type) && $checkout_type == 2) {
                 //remove temp info
-                cartFunctions::delete_temp_log_checkout_type( $order_id );
-                cartFunctions::delete_transaction_successful_log( $order_id );
-                
+                cartFunctions::delete_temp_log_checkout_type($order_id);
+                cartFunctions::delete_transaction_successful_log($order_id);
+
                 $auto_setting_config = CsAutomaticOrderConfirmationSettings::get_order_confirm_settings_data();
-                $status = isset($auto_setting_config['order_status']) && !empty($auto_setting_config['order_status']) ? $auto_setting_config['order_status'] : 'completed';
+                $status = isset($auto_setting_config['order_status']) && !empty($auto_setting_config['order_status']) ? util::check_evil_script($auto_setting_config['order_status']) : 'completed';
                 //automatic confirmation
-                
-            }else{
+
+            } else {
                 //manual confirmation
                 $status = 'pending';
             }
 
             // once a transaction is successful, set the purchase to complete
-            edd_update_payment_status($payment, $status );
+            edd_update_payment_status($payment, $status);
 
             // go to the success page			
             edd_send_to_success_page();
-
-        }else {
+        } else {
             $fail = true; // errors were detected
         }
 
-        if( $fail !== false ) {
-            edd_send_back_to_checkout('?payment-mode=' . $purchase_data['post_data']['edd-gateway']);
+        if ($fail !== false) {
+            edd_send_back_to_checkout('?payment-mode=' . util::check_evil_script($purchase_data['post_data']['edd-gateway']));
         }
-
-    }    
-    
-    
+    }
 }
