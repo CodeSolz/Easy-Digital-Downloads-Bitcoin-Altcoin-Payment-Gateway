@@ -1,0 +1,21 @@
+{
+  "name": "Easy_Digital_Downloads_Bitcoin_AltCoin_Payment_Gateway",
+  "description": "A very light weight Cryptocurrency payment gateway for Easy Digital Downloads.",
+  "type": "composer-plugin",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "CodeSolz.net",
+      "email": "customer-support@codesolz.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "EddBtcAltGateWayCoreLib\\": "core/"
+    }
+  },
+  "require": {
+    "php": ">=6.0.0"
+  },
+  "minimum-stability": "dev"
+}
