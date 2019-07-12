@@ -43,7 +43,7 @@
         <img alt="undefined" src="https://img.shields.io/badge/Created%20By-CodeSolz-brightgreen.svg">
     </a>
 </p>
-<h2 align="center">WooCommerce AltCoin Payment Gateway - Wordpress plugin</h2>
+<h2 align="center">Easy Digital Downloads Bitcoin AltCoin Payment Gateway - Wordpress plugin</h2>
 
 ### What does it do? 
 
