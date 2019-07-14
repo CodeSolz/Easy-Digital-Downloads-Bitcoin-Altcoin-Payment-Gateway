@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-    <a href="https://travis-ci.com/codesols/Easy-Digital-Downloads-Bitcoin-Altcoin-Payment-Gateway">
-        <img alt="undefined" src="https://img.shields.io/travis/com/codesols/Easy-Digital-Downloads-Bitcoin-Altcoin-Payment-Gateway.svg"> 
+    <a href="https://travis-ci.com/codesolz/Easy-Digital-Downloads-Bitcoin-Altcoin-Payment-Gateway">
+        <img alt="undefined" src="https://img.shields.io/travis/com/codesolz/Easy-Digital-Downloads-Bitcoin-Altcoin-Payment-Gateway.svg"> 
     </a><br>
-    <img alt="undefined" src="https://img.shields.io/github/last-commit/tuhin18003/edd-bitcoin-altcoin-payment-gateway.svg">
-    <a href="https://codeclimate.com/github/tuhin18003/edd-bitcoin-altcoin-payment-gateway">
+    <img alt="undefined" src="https://img.shields.io/github/last-commit/codesolz/edd-bitcoin-altcoin-payment-gateway.svg">
+    <a href="https://codeclimate.com/github/codesolz/edd-bitcoin-altcoin-payment-gateway">
         <img alt="undefined" src="https://api.codeclimate.com/v1/badges/53342611d39bf5044b5f/maintainability">
     </a>
     <img alt="undefined" src="https://img.shields.io/github/languages/code-size/codesolz/Easy-Digital-Downloads-Bitcoin-Altcoin-Payment-Gateway.svg"> <br>
