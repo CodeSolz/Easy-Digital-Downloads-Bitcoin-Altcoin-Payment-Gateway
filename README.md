@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-    <a href="https://travis-ci.com/codesolz/Easy-Digital-Downloads-Bitcoin-Altcoin-Payment-Gateway">
-        <img alt="undefined" src="https://img.shields.io/travis/com/codesolz/Easy-Digital-Downloads-Bitcoin-Altcoin-Payment-Gateway.svg"> 
+    <a href="https://wordpress.org/plugins/edd-bitcoin-altcoin-payment-gateway/advanced/">
+        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/codesolz/Easy-Digital-Downloads-Bitcoin-Altcoin-Payment-Gateway.svg">
     </a><br>
     <img alt="undefined" src="https://img.shields.io/github/last-commit/codesolz/edd-bitcoin-altcoin-payment-gateway.svg">
     <a href="https://codeclimate.com/github/codesolz/edd-bitcoin-altcoin-payment-gateway">
