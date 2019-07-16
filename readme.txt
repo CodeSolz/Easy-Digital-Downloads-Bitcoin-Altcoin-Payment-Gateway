@@ -20,7 +20,7 @@ Accept bitcoin / altcoin payment from your Easy Digital Downloads store without 
 
 <blockquote>
 = Need Help on upgrade =
-Visit us to  <a target="_blank" href="https://codesolz.net/?utm_source=wordpress.org&utm_medium=README&utm_campaign=woo-altcoin-payment-gateway">get support and more customization information</a>
+Visit us to  <a target="_blank" href="https://codesolz.net/?utm_source=wordpress.org&utm_medium=README&utm_campaign=edd-bitcoin-altcoin-payment-gateway">get support and more customization information</a>
 </blockquote>
 
 <blockquote>
@@ -29,7 +29,7 @@ Visit us to  <a target="_blank" href="https://codesolz.net/?utm_source=wordpress
 
 <blockquote>
 = Automatic order confirmation / Pro version =
-Check more for <a target="_blank" href="https://bit.ly/2IuZ96R">automatic order confirmation</a>.
+Check more for <a target="_blank" href="https://bit.ly/2Llbm1T">automatic order confirmation</a>.
 </blockquote>
 
 
@@ -72,7 +72,7 @@ Check more for <a target="_blank" href="https://bit.ly/2IuZ96R">automatic order 
 = Store Order Processing - PRO Version = 
 <ul>
     <li> Unlimited manual order confirmation.</li>
-    <li> <a target="_blank" href="https://bit.ly/2IuZ96R">Pro version</a> has unlimited automatic order confirmation. <a target="_blank" href="https://bit.ly/2IuZ96R">UPGRADE TO PRO </a> or check the trail</li>
+    <li> <a target="_blank" href="https://bit.ly/2Llbm1T">Pro version</a> has unlimited automatic order confirmation. <a target="_blank" href="https://bit.ly/2Llbm1T">UPGRADE TO PRO </a> or check the trail</li>
 </ul>
 
 = Product Price Calculation = 
@@ -84,7 +84,7 @@ Check more for <a target="_blank" href="https://bit.ly/2IuZ96R">automatic order 
 = Number of Crypto Currencies - free version = 
 <ul>
     <li> Currently You can accept 2200+ crypto currencies ( manual order confirmation - free version ) </li>
-    <li> Your coin is not listed? Visit our website <a target="_blank" href="https://codesolz.net/?utm_source=wordpress.org&utm_medium=README&utm_campaign=woo-altcoin-payment-gateway">To Get Instant Support</a> and get listed to free version.</li>
+    <li> Your coin is not listed? Visit our website <a target="_blank" href="https://codesolz.net/?utm_source=wordpress.org&utm_medium=README&utm_campaign=edd-bitcoin-altcoin-payment-gateway">To Get Instant Support</a> and get listed to free version.</li>
 </ul>
 
 = Number of Crypto Currencies - PRO version = 
@@ -97,7 +97,7 @@ Check more for <a target="_blank" href="https://bit.ly/2IuZ96R">automatic order 
     <li> Dogecoin (DOGE) </li>
     <li> Ripple (XRP) </li>
     <li> Dash (DASH) </li>
-    <li> Your coin is not listed? Visit our website <a target="_blank" href="https://codesolz.net/?utm_source=wordpress.org&utm_medium=README&utm_campaign=woo-altcoin-payment-gateway">To Get Instant Support</a> & ask how you can make listed your coin. (There is a little charge to get listed to the automatic options list.)</li>
+    <li> Your coin is not listed? Visit our website <a target="_blank" href="https://codesolz.net/?utm_source=wordpress.org&utm_medium=README&utm_campaign=edd-bitcoin-altcoin-payment-gateway">To Get Instant Support</a> & ask how you can make listed your coin. (There is a little charge to get listed to the automatic options list.)</li>
 </ul>
 
 </blockquote>
@@ -121,17 +121,17 @@ AED, AFN, ALL, AMD, ANG, AOA, ARS, AUD, AWG, AZN, BAM, BBD, BDT, BGN, BHD, BIF, 
 
 <blockquote>
 = Pro Version for automatic order confirmation =
-  * Check <a target="_blank" href="https://bit.ly/2IuZ96R">Pro version</a> and start a trail, no credit card required
+  * Check <a target="_blank" href="https://bit.ly/2Llbm1T">Pro version</a> and start a trail, no credit card required
 
 = For Quick Support, feature request and bug reporting = 
 <ul>
-    <li> Visit our website <a target="_blank" href="https://codesolz.net/?utm_source=wordpress.org&utm_medium=README&utm_campaign=woo-altcoin-payment-gateway">To Get Instant Support</a></li>
+    <li> Visit our website <a target="_blank" href="https://codesolz.net/?utm_source=wordpress.org&utm_medium=README&utm_campaign=edd-bitcoin-altcoin-payment-gateway">To Get Instant Support</a></li>
     <li> For more dedicated support or feature request write to us at <a target="_blank" href="mailto:support@codesolz.net">support@codesolz.net</a> or create a ticket <a href="http://support.codesolz.net/public/create-ticket" target="_blank"> Support Center</a></li>
 </ul>
 
 = As it's open source, check our github development Status = 
 <ul>
-    <li> Check development status or issues in <a target="_blank" href="https://github.com/CodeSolz/WooCommerce-AltCoin-Payment-Gateway" > github.com/WooCommerce-AltCoin-Payment-Gateway </a>
+    <li> Check development status or issues in <a target="_blank" href="https://github.com/CodeSolz/Easy-Digital-Downloads-Bitcoin-Altcoin-Payment-Gateway" > https://github.com/CodeSolz/Easy-Digital-Downloads-Bitcoin-Altcoin-Payment-Gateway </a>
 </ul>
 </blockquote>
 

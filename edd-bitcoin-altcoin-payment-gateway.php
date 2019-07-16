@@ -2,8 +2,8 @@
 /**
  * @wordpress-plugin
  * Plugin Name:       Easy Digital Downloads - Bitcoin / AltCoin Payment Gateway
- * Plugin URI:        https://coinmarketstats.online/wordpress-plugin/easy-digital-downloads-bitcoin-altcoin-payment-gateway
- * Description:       A very light weight Cryptocurrency payment gateway for Easy Digital Downloads.  
+ * Plugin URI:        https://coinmarketstats.online/product/easy-digital-downloads-bitcoin-altcoin-payment-gateway
+ * Description:       A very light weight Cryptocurrency payment gateway for Easy Digital Downloads. Accept Bitcoin, Bitcoin Cash, Ethereum, Dogecoin, Dash, Litecoin, Ripple & 1800+ cryptocurrencies  
  * Version:           1.0.0
  * Author:            CodeSolz.net
  * Author URI:        https://www.codesolz.net

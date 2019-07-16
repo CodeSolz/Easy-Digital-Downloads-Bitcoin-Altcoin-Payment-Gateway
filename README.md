@@ -47,7 +47,7 @@
 
 ### What does it do?
 
-Accept bitcoin / altcoin payment from your WooCommerce store without help of middle man! Use your own coin address to receive payment directly to that address. You can receive any amount of payment as it's directly to your address. There is no chance of FRAUD, STEALING or SCAM. Use this plugin and stay safe!
+Accept bitcoin / altcoin payment from your Easy Digital Download store without help of middle man! Use your own coin address to receive payment directly to that address. You can receive any amount of payment as it's directly to your address. There is no chance of FRAUD, STEALING or SCAM. Use this plugin and stay safe!
 
 <blockquote>
 ## Need Help on upgrade ##
@@ -60,7 +60,7 @@ Visit us to  <a target="_blank" href="https://codesolz.net/?utm_source=wordpress
 
 <blockquote>
 ### Automatic order confirmation has been released!! ###
-Check more for <a target="_blank" href="https://bit.ly/2IuZ96R">automatic order confirmation</a>.
+Check more for <a target="_blank" href="https://bit.ly/2Llbm1T">automatic order confirmation</a>.
 </blockquote>
 
 ### Key Features
@@ -103,7 +103,7 @@ Check more for <a target="_blank" href="https://bit.ly/2IuZ96R">automatic order 
 
 <ul>
     <li> Unlimited manual order confirmation.</li>
-    <li> <a target="_blank" href="https://bit.ly/2IuZ96R">Pro version</a> has unlimited automatic order confirmation. <a target="_blank" href="https://bit.ly/2IuZ96R">UPGRADE TO PRO </a> or check the trail</li>
+    <li> <a target="_blank" href="https://bit.ly/2Llbm1T">Pro version</a> has unlimited automatic order confirmation. <a target="_blank" href="https://bit.ly/2Llbm1T">UPGRADE TO PRO </a> or check the trail</li>
 </ul>
 
 = Product Price Calculation =
@@ -153,13 +153,10 @@ Check more for <a target="_blank" href="https://bit.ly/2IuZ96R">automatic order 
 ### Available Languages
 
 - English
-- Spanish
-- French
-- Dutch
 
 ### Installation
 
-1. Upload the WooCommerce_AltCoin_Payment_Gateway folder to the '/wp-content/plugins/' directory
+1. Upload the edd-bitcoin-altcoin-payment-gateway folder to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 > _Installation video tutorial_
@@ -177,5 +174,5 @@ Check more for <a target="_blank" href="https://bit.ly/2IuZ96R">automatic order 
 - _For more dedicated support or feature request write to us at - [support@codesolz.net](mailto:support@codesolz.net)_
 
 <a href="https://codesolz.net">
-  <img src="https://codesolz.net/wp-content/uploads/2016/11/logo4-hover.png" alt="codesolz.net"/>
+  <img src="https://codesolz.net/packages/uploads/2016/11/logo4-hover.png" alt="codesolz.net"/>
 </a>
