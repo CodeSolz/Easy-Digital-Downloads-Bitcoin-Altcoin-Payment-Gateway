@@ -169,8 +169,8 @@ Check more for <a target="_blank" href="https://bit.ly/2Llbm1T">automatic order 
 
 ### Credentials
 
-- _Created & Supported by - [CodeSolz.com](https://codesolz.com/)_
-- _For real-time support visit our website - [CodeSolz.com](https://codesolz.com/)_
+- _Created & Supported by - [CodeSolz.net](https://codesolz.net/)_
+- _For real-time support visit our website - [CodeSolz.net](https://codesolz.net/)_
 - _For more dedicated support or feature request write to us at - [support@codesolz.net](mailto:support@codesolz.net)_
 
 <a href="https://codesolz.net">
